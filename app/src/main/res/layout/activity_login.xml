@@ -14,20 +14,36 @@ respect to other elements (parent or sibling) -->
 
     <!--can center vertically within parent with relativeayout-->
     <TextView
-        android:id="@+id/helloWorld"
+        android:id="@+id/title"
         android:text="GradeCalculator"
         android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="Username"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:text="Password"/>
 
     <!--relativelayout, can lay out in respect to element by id-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/helloWorld"
+        android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
+        android:onClick="logIn"
         android:text="Log in"/>
 
 </RelativeLayout>
