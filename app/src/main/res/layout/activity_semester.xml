@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- RelativeLayout allows for element positioning with
+respect to other elements (parent or sibling) -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,8 +12,21 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.android.a_mace.gradecalculator.SemesterActivity">
 
+    <!--can center vertically within parent with relativeayout-->
     <TextView
+        android:id="@+id/helloWorld"
         android:text="Hello World!"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!--relativelayout, can lay out in respect to element by id-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloWorld"
+        android:layout_centerHorizontal="true"
+        android:text="I am a button"/>
+
 </RelativeLayout>
