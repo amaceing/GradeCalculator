@@ -1,6 +1,5 @@
 package com.android.a_mace.gradecalculator;
 
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,11 +14,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void logIn(View view) {
+        //R.id.x where x = @+id/x in xml to get element
         String username = getStringFromEditText(R.id.username);
         String password = getStringFromEditText(R.id.password);
         System.out.println(username + " " + password + " logging in...");
     }
 
+    //returns String currently in the EditText specified
     private String getStringFromEditText(int id) {
         EditText et = (EditText)findViewById(id);
         String etString = et.getText().toString();
