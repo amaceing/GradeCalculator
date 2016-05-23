@@ -15,7 +15,8 @@ respect to other elements (parent or sibling) -->
     <!--can center vertically within parent with relativeayout-->
     <TextView
         android:id="@+id/helloWorld"
-        android:text="Hello World!"
+        android:text="GradeCalculator"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -27,6 +28,6 @@ respect to other elements (parent or sibling) -->
         android:layout_height="wrap_content"
         android:layout_below="@+id/helloWorld"
         android:layout_centerHorizontal="true"
-        android:text="I am a button"/>
+        android:text="Log in"/>
 
 </RelativeLayout>
