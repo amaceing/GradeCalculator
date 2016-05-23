@@ -27,7 +27,7 @@ respect to other elements (parent or sibling) -->
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
-        android:text="Username"/>
+        android:hint="Username"/>
 
     <EditText
         android:id="@+id/password"
@@ -35,7 +35,7 @@ respect to other elements (parent or sibling) -->
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
-        android:text="Password"/>
+        android:hinttest="Password"/>
 
     <!--relativelayout, can lay out in respect to element by id-->
     <Button
